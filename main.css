@@ -1,0 +1,13 @@
+/*hero*/
+
+body {
+    margin: 0;
+}
+.hero {
+    background-color: #F0EFE9;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+}
