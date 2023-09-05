@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: #F0EFE9;
+    padding: 16px;
+}
+
+.container {
+    display: flex;
+    gap: 70px;
+
+    @media (min-width: 2500px) {
+        max-width: 2048px;
+    }
+}
+
+.menu-bars {
+    border: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    
+    /*Justera mobil-width närmare fram!*/
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+.menu {
+    display: none;
+
+    @media (min-width: 992px) {
+        display: block;
+    }
+}
