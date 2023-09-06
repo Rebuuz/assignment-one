@@ -5,32 +5,62 @@ body {
 .header {
     background-color: #F0EFE9;
     padding: 16px;
-}
 
-.container {
-    display: flex;
-    gap: 70px;
+    .container {
+        display: flex;
+        gap: 70px;
+        align-items: center;
+        justify-content: space-between;
 
-    @media (min-width: 2500px) {
-        max-width: 2048px;
+        .menu-bars {
+            border: none;
+            background-color: transparent;
+            font-size: 25px;
+
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
+
+        .menu {
+           display: none;
+           flex: 1;
+
+           @media (min-width: 992px) {
+            display: block;
+           }
+
+           .top-menu {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: solid 1px #DAD9D3;
+            padding-bottom: 0.5rem;
+
+            .contact {
+                display: flex;
+
+                .contact-info {
+                    margin-right: 2rem;
+                    border-right: solid 1px #DAD9D3;
+                    padding-right: 2rem;
+
+                    &.last {
+                        border: none;
+                    }
+                }
+            }
+
+            .contact-media {
+
+                i {
+                    margin-left: 1rem;
+                }
+            }
+
+           }
+        }
     }
-}
 
-.menu-bars {
-    border: none;
-    font-size: 1.5rem;
-    background-color: transparent;
-    
-    /*Justera mobil-width närmare fram!*/
-    @media (min-width: 992px) {
-        display: none;
-    }
-}
 
-.menu {
-    display: none;
 
-    @media (min-width: 992px) {
-        display: block;
-    }
 }
