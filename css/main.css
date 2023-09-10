@@ -1,5 +1,6 @@
 /*Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&family=Inter:wght@300;500&display=swap");
 html, body {
   margin: 0;
   color: #191919;
@@ -10,10 +11,10 @@ html, body {
 
 .btn-yellow {
   background-color: #F9D783;
-  border-color: solid 1px #F9D783;
+  border: solid 1px #F9D783;
   color: #191919;
   text-decoration: none;
-  padding: 8px 25px;
+  padding: 15px 25px;
   border-radius: 25px;
   font-size: 16px;
   font-weight: 600;
@@ -28,36 +29,56 @@ html, body {
   color: #F0EFE9;
 }
 
-.header {
+.btn-transparent {
+  background-color: transparent;
+  border: solid 1px #191919;
+  color: #191919;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn-transparent i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-transparent:hover {
+  background-color: #191919;
+  border-color: solid 1px #191919;
+  color: #F0EFE9;
+}
+
+header {
   background-color: #F0EFE9;
   padding: 16px;
 }
-.header .container {
+header .container {
   display: flex;
   gap: 70px;
   align-items: center;
   justify-content: space-between;
 }
-.header .container .menu-bars {
+header .container .menu-bars {
   border: none;
   background-color: transparent;
   font-size: 25px;
 }
 @media (min-width: 992px) {
-  .header .container .menu-bars {
+  header .container .menu-bars {
     display: none;
   }
 }
-.header .container .menu {
+header .container .menu {
   display: none;
   flex: 1;
 }
 @media (min-width: 992px) {
-  .header .container .menu {
+  header .container .menu {
     display: block;
   }
 }
-.header .container .menu .top-menu {
+header .container .menu .top-menu {
   display: flex;
   justify-content: flex-end;
   border-bottom: solid 1px #DAD9D3;
@@ -65,20 +86,20 @@ html, body {
   align-items: center;
 }
 @media (min-width: 1200px) {
-  .header .container .menu .top-menu {
+  header .container .menu .top-menu {
     justify-content: space-between;
   }
 }
-.header .container .menu .top-menu .contact {
+header .container .menu .top-menu .contact {
   display: none;
   align-items: center;
 }
 @media (min-width: 1200px) {
-  .header .container .menu .top-menu .contact {
+  header .container .menu .top-menu .contact {
     display: flex;
   }
 }
-.header .container .menu .top-menu .contact .contact-info {
+header .container .menu .top-menu .contact .contact-info {
   margin-right: 2rem;
   border-right: solid 1px #DAD9D3;
   padding-right: 2rem;
@@ -86,39 +107,39 @@ html, body {
   font-family: "Inter", sans-serif;
   font-weight: 300;
 }
-.header .container .menu .top-menu .contact .contact-info i {
+header .container .menu .top-menu .contact .contact-info i {
   margin-right: 5px;
   font-size: 1.2em;
   color: #666666;
 }
-.header .container .menu .top-menu .contact .contact-info.last {
+header .container .menu .top-menu .contact .contact-info.last {
   border: none;
 }
-.header .container .menu .top-menu .contact-media a {
+header .container .menu .top-menu .contact-media a {
   margin-left: 0.5rem;
   color: #191919;
   font-size: 1.2rem;
 }
-.header .container .menu .top-menu .contact-media a:hover {
+header .container .menu .top-menu .contact-media a:hover {
   color: #F94D1C;
 }
-.header .container .menu .main-menu {
+header .container .menu .main-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
 }
-.header .container .menu .main-menu nav a {
+header .container .menu .main-menu nav a {
   display: inline-block;
   color: #191919;
   text-decoration: none;
   margin-right: 35px;
   position: relative;
 }
-.header .container .menu .main-menu nav a.active {
+header .container .menu .main-menu nav a.active {
   font-weight: 500;
 }
-.header .container .menu .main-menu nav a.active::after, .header .container .menu .main-menu nav a:hover::after {
+header .container .menu .main-menu nav a.active::after, header .container .menu .main-menu nav a:hover::after {
   content: "";
   font-weight: 500;
   position: absolute;
@@ -129,23 +150,34 @@ html, body {
   bottom: -3px;
   transform: translate(calc(50% - 15px));
 }
-
-.hero {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
+header .container .menu .main-menu .btn-login {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
-.bg-image {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
+.showcase {
+  background-color: #F0EFE9;
 }
-
-.image {
-  position: absolute;
-  top: 54px;
-  left: 1017px;
+.showcase .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.showcase .container .content h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+}
+.showcase .container .content p {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.showcase .container .content a {
+  margin-right: 10px;
+}
+.showcase .container .image {
+  margin-right: -50px;
 }
