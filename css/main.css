@@ -14,7 +14,7 @@ html, body {
   border: solid 1px #F9D783;
   color: #191919;
   text-decoration: none;
-  padding: 15px 25px;
+  padding: 15px 30px;
   border-radius: 25px;
   font-size: 16px;
   font-weight: 600;
@@ -34,7 +34,7 @@ html, body {
   border: solid 1px #191919;
   color: #191919;
   text-decoration: none;
-  padding: 15px 25px;
+  padding: 15px 30px;
   border-radius: 25px;
   font-size: 16px;
   font-weight: 600;
@@ -157,27 +157,74 @@ header .container .menu .main-menu .btn-login {
 
 .showcase {
   background-color: #F0EFE9;
+  background-image: url("/images/waves.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: -10% 90%;
 }
 .showcase .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.showcase .container .content {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .showcase .container .content {
+    text-align: center;
+  }
+}
 .showcase .container .content h1 {
   font-family: "DM Sans", sans-serif;
-  font-size: 80px;
+  font-size: 50px;
   font-weight: 700;
+}
+@media (min-width: 768px) {
+  .showcase .container .content h1 {
+    font-size: 70px;
+  }
+}
+@media (min-width: 1400px) {
+  .showcase .container .content h1 {
+    font-size: 86px;
+  }
 }
 .showcase .container .content p {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
-  font-weight: lighter;
-  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 40px;
   padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .showcase .container .content p {
+    font-size: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .showcase .container .content a {
-  margin-right: 10px;
+  margin-right: 0px;
+  display: block;
+  margin-bottom: 20px;
+}
+@media (min-width: 769px) {
+  .showcase .container .content a {
+    margin-right: 10px;
+    display: inline-block;
+  }
 }
 .showcase .container .image {
+  display: none;
   margin-right: -50px;
+}
+@media (min-width: 1200px) {
+  .showcase .container .image {
+    display: block;
+  }
 }
