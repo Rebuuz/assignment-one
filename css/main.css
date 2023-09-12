@@ -157,10 +157,9 @@ header .container .menu .main-menu .btn-login {
 
 .showcase {
   background-color: #F0EFE9;
-  background-image: url("/images/waves.svg");
+  background-image: url("/images/waves2.svg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: -10% 90%;
+  background-position: -2% 102%;
 }
 .showcase .container {
   display: flex;
@@ -174,7 +173,7 @@ header .container .menu .main-menu .btn-login {
 }
 @media (min-width: 1200px) {
   .showcase .container .content {
-    text-align: center;
+    text-align: left;
   }
 }
 .showcase .container .content h1 {
@@ -217,6 +216,7 @@ header .container .menu .main-menu .btn-login {
   .showcase .container .content a {
     margin-right: 10px;
     display: inline-block;
+    padding: 15px 30px;
   }
 }
 .showcase .container .image {
@@ -226,5 +226,71 @@ header .container .menu .main-menu .btn-login {
 @media (min-width: 1200px) {
   .showcase .container .image {
     display: block;
+  }
+}
+
+.companies {
+  display: none;
+}
+@media (min-width: 1400px) {
+  .companies {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 55px;
+  }
+}
+
+.features {
+  border: #D1D1D1 1.2px solid;
+  border-radius: 2px;
+  margin-left: 200px;
+  margin-right: 200px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /*ta ev bort sen!*/
+  margin-bottom: 100px;
+  margin-top: 70px;
+}
+.features .content-left {
+  display: grid;
+  grid-template-columns: 70%;
+  padding-left: 100px;
+  margin-bottom: 215px;
+}
+.features .content-left h2 {
+  margin-top: 87px;
+  color: #F94D1C;
+  font-weight: 400;
+  font-size: 18px;
+}
+.features .content-left p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+.features .content-left .btn-yellow {
+  text-align: center;
+  border-radius: 50px;
+  margin: 0 0 auto;
+  padding: 15px;
+}
+.features .content-right {
+  display: none;
+}
+@media (min-width: 1400px) {
+  .features .content-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-right: 200px;
+    margin-bottom: 115px;
+    -moz-column-gap: 140px;
+         column-gap: 140px;
+  }
+  .features .content-right i {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 25px;
   }
 }
