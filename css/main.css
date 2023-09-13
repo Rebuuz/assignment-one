@@ -25,7 +25,7 @@ html, body {
 }
 .btn-yellow:hover {
   background-color: #191919;
-  border-color: solid 1px #191919;
+  border: solid 1px #191919;
   color: #F0EFE9;
 }
 
@@ -45,8 +45,50 @@ html, body {
 }
 .btn-transparent:hover {
   background-color: #191919;
-  border-color: solid 1px #191919;
+  border: solid 1px #191919;
   color: #F0EFE9;
+}
+
+.btn-black {
+  background-color: #191919;
+  border: solid 1px #191919;
+  color: #F0EFE9;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn-black i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-black:hover {
+  background-color: #F9D783;
+  border: solid 1px #F9D783;
+  color: #191919;
+}
+
+.btn-round {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  padding-top: 16px;
+  padding-left: 2px;
+  line-height: 20px;
+  border: 1.2px solid #191919;
+  border-radius: 50%;
+  color: #191919;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 700;
+}
+.btn-round:hover {
+  background-color: #F9D783;
+  border: solid 1px #F9D783;
+  color: #191919;
 }
 
 header {
@@ -236,61 +278,301 @@ header .container .menu .main-menu .btn-login {
   .companies {
     display: flex;
     justify-content: center;
-    margin-top: 70px;
     gap: 55px;
+    margin: 3rem;
   }
 }
 
 .features {
-  border: #D1D1D1 1.2px solid;
-  border-radius: 2px;
-  margin-left: 200px;
-  margin-right: 200px;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  /*ta ev bort sen!*/
-  margin-bottom: 100px;
-  margin-top: 70px;
+  border: 1.2px solid #d1d1d1;
+  border-radius: 1.2px;
+  margin-left: 12rem;
+  margin-right: 12rem;
+}
+@media (max-width: 1400px) {
+  .features {
+    padding: 2rem 0;
+  }
+}
+@media (max-width: 576px) {
+  .features {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+.features .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+@media (max-width: 992px) {
+  .features .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .features .content-left {
-  display: grid;
-  grid-template-columns: 70%;
-  padding-left: 100px;
-  margin-bottom: 215px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  padding: 2rem;
+  margin-bottom: 10rem;
 }
 .features .content-left h2 {
-  margin-top: 87px;
+  margin: 1.5rem 0 2rem 0;
   color: #F94D1C;
   font-weight: 400;
   font-size: 18px;
+}
+@media (max-width: 992px) {
+  .features .content-left h2 {
+    margin: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .features .content-left h2 {
+    margin: 1.5rem 0;
+  }
 }
 .features .content-left p {
   font-family: "DM Sans", sans-serif;
   font-size: 45px;
   font-weight: 700;
 }
+@media (max-width: 1400px) {
+  .features .content-left p {
+    font-size: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .features .content-left p {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .features .content-left p {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 576px) {
+  .features .content-left p {
+    font-size: 1.3em;
+    max-width: 100%;
+  }
+}
 .features .content-left .btn-yellow {
   text-align: center;
   border-radius: 50px;
-  margin: 0 0 auto;
-  padding: 15px;
+  padding: 15px 30px;
+  max-width: 100%;
+}
+@media (max-width: 992px) {
+  .features .content-left {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+}
+@media (max-width: 576px) {
+  .features .content-left {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
 }
 .features .content-right {
-  display: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 2rem;
+  margin-top: 4rem;
 }
-@media (min-width: 1400px) {
-  .features .content-right {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding-right: 200px;
-    margin-bottom: 115px;
-    -moz-column-gap: 140px;
-         column-gap: 140px;
+.features .content-right .content-box {
+  padding: 1rem;
+}
+@media (max-width: 992px) {
+  .features .content-right .content-box {
+    padding: 0;
   }
+}
+.features .content-right i {
+  margin-bottom: 2rem;
+  font-size: 25px;
+}
+@media (max-width: 992px) {
   .features .content-right i {
-    margin-top: 100px;
-    margin-bottom: 30px;
-    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 1rem;
   }
+}
+@media (max-width: 992px) {
+  .features .content-right {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .features .content-right {
+    display: none;
+  }
+}
+
+.about-company {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .about-company {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.about-company .container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .about-company .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+  }
+}
+.about-company .container .column-left {
+  display: flex;
+  position: relative;
+  margin-left: 3rem;
+}
+@media (max-width: 576px) {
+  .about-company .container .column-left {
+    margin-left: -15rem;
+    align-content: center;
+  }
+}
+.about-company .container .column-left .img {
+  position: absolute;
+}
+@media (max-width: 576px) {
+  .about-company .container .column-left .img {
+    width: 100%;
+    height: auto;
+  }
+}
+.about-company .container .column-left .founder-box {
+  background-color: #BEEBFF;
+  position: absolute;
+  margin-left: -60px;
+  margin-bottom: 20px;
+  align-self: flex-end;
+  max-width: 368px;
+  padding: 2rem 1rem 2rem 2rem;
+}
+@media (max-width: 576px) {
+  .about-company .container .column-left .founder-box {
+    margin: 0 auto;
+    text-align: left;
+  }
+}
+.about-company .container .column-left .founder-box h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #191919;
+}
+.about-company .container .column-left .founder-box span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #F94D1C;
+  font-weight: 700;
+}
+.about-company .container .column-left .founder-box p {
+  font-size: 16px;
+  margin-top: 1rem;
+}
+.about-company .container .column-right {
+  padding: 1.5rem;
+}
+@media (max-width: 576px) {
+  .about-company .container .column-right {
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+  }
+}
+.about-company .container .column-right h2 {
+  margin: 1.5rem 0 2rem 0;
+  color: #F94D1C;
+  font-weight: 400;
+  font-size: 18px;
+}
+@media (max-width: 992px) {
+  .about-company .container .column-right h2 {
+    margin: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .about-company .container .column-right h2 {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+}
+.about-company .container .column-right h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+@media (max-width: 1400px) {
+  .about-company .container .column-right h3 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .about-company .container .column-right h3 {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .about-company .container .column-right h3 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 576px) {
+  .about-company .container .column-right h3 {
+    padding-bottom: 2rem;
+  }
+}
+.about-company .container .column-right p {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 576px) {
+  .about-company .container .column-right p {
+    display: none;
+  }
+}
+.about-company .container .column-right .btn-black {
+  margin-right: 2rem;
+}
+.about-company .container .column-right span {
+  margin-left: 1rem;
 }
