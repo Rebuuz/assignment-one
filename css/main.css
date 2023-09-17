@@ -679,3 +679,21 @@ header .container .menu .main-menu .btn-login {
 .why-choose-us .container .content-left {
   background-color: pink;
 }
+.why-choose-us .container .content-left .bottom-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.why-choose-us .container .content-left .bottom-box img {
+  border: 1.5px solid #E7E7E7;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+.why-choose-us .container .content-left .bottom-box .text {
+  margin-left: 1rem;
+}
+.why-choose-us .container .content-left .bottom-box .text h3 {
+  font-size: 22px;
+}

@@ -724,6 +724,7 @@ header {
 
         .content-left {
             background-color: pink;
+            margin.
 
             h3 {
 
@@ -731,6 +732,36 @@ header {
 
             h2 {
 
+
+            }
+
+            .bottom-box {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                img {
+                    border: 1.5px solid #E7E7E7;
+                    border-radius: 50%;
+                    padding: 0.5rem;
+                    background-color: #FFFFFF;
+                    margin-bottom: 1rem;
+                }
+
+                .text {
+                    margin-left: 1rem;
+
+                    h3 {
+                        font-size: 22px;
+                    }
+    
+                    p {
+                        
+                    }
+
+                }
+
+                
 
             }
         }
