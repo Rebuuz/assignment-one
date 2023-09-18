@@ -587,7 +587,8 @@ header .container .menu .main-menu .btn-login {
   margin-top: 5rem;
   background-image: url(/images/waves-reverse.svg);
   background-repeat: no-repeat;
-  background-position: 100% 110%;
+  background-position: 100% 102%;
+  width: 100%;
 }
 .services .container .info h3 {
   padding-top: 2rem;
@@ -673,27 +674,72 @@ header .container .menu .main-menu .btn-login {
   padding-bottom: 5rem;
 }
 
-.why-choose-us {
-  background-color: red;
+.why-choose-us .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
 }
-.why-choose-us .container .content-left {
-  background-color: pink;
+.why-choose-us .container .content-left h3 {
+  margin: 1.5rem 0 1.5rem 0;
+  color: #F94D1C;
+  font-weight: 400;
+  font-size: 18px;
+}
+@media (max-width: 992px) {
+  .why-choose-us .container .content-left h3 {
+    margin: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .why-choose-us .container .content-left h3 {
+    margin: 1.5rem 0;
+  }
+}
+.why-choose-us .container .content-left h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 45px;
 }
 .why-choose-us .container .content-left .bottom-box {
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
   align-items: center;
 }
-.why-choose-us .container .content-left .bottom-box img {
+.why-choose-us .container .content-left .bottom-box .icon img {
   border: 1.5px solid #E7E7E7;
   border-radius: 50%;
   padding: 0.5rem;
   background-color: #FFFFFF;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .why-choose-us .container .content-left .bottom-box .text {
+  display: grid;
+  grid-template-columns: 1fr;
   margin-left: 1rem;
+  line-height: 1rem;
 }
 .why-choose-us .container .content-left .bottom-box .text h3 {
   font-size: 22px;
+  color: #191919;
+  margin: 0.5rem 0;
+  font-weight: 700;
+  padding: 0;
+}
+.why-choose-us .container .content-left .bottom-box .text p {
+  margin-bottom: 3rem;
+}
+.why-choose-us .container .content-right {
+  position: relative;
+}
+.why-choose-us .container .content-right .bg-box {
+  position: absolute;
+  background-color: #F0EFE9;
+  width: 980px;
+  height: 425px;
+  top: 13rem;
+  right: -13.55rem;
+}
+.why-choose-us .container .content-right img {
+  position: absolute;
+  margin-top: 1.5rem;
 }
