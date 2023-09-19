@@ -98,6 +98,21 @@ html, body {
     }
 }
 
+.section-title {
+    p {
+        margin: 1rem 0 1rem 0;
+        color: #F94D1C;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    h2 {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 45px;
+        font-weight: 700;
+    }
+}
+
 header {
     background-color: #F0EFE9;
     padding: 16px;
@@ -794,10 +809,10 @@ header {
             .bg-box {
                 position: absolute;
                 background-color: #F0EFE9;
-                width: 980px; 
+                width: 1057px; 
                 height: 425px;
                 top: 13rem;
-                right: -13.55rem;
+                right: -18.99rem;
             }
 
             img {
@@ -808,3 +823,165 @@ header {
     }
 }
 
+.project-and-case {
+
+    .container {
+
+        .section-title {
+            text-align: center;
+            margin-top: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        .articles {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+
+            img {
+                width: 100%;
+
+            }
+            
+            h3 {
+                font-size: 22px;
+                font-weight: 700;
+                padding-top: 2rem;
+                padding-bottom: 1rem;
+                border-bottom: 1.5px solid #E7E7E7;
+            }
+
+            a {
+                text-decoration: none;
+                color: #191919;
+                display: block;
+                text-align: right;
+                margin-top: 2rem;
+            }
+        }
+
+        .button {
+            text-align: center;
+            margin-top: 5rem;
+            
+        }
+    }
+}
+
+.team-members {
+    background-color: #F0D082;
+    margin-top: 5rem;
+
+    .container {
+
+        .section-title {
+            padding-top: 4rem;
+            
+            h2 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                a {
+                    border: 1px solid #191919;
+                }
+            }
+
+        }
+
+        .section-team {
+            display: flex;
+            justify-content: space-around;
+            gap: 1rem;
+            margin-top: 5rem;
+
+            div {
+                
+                h3 {
+                    padding-top: 2rem;
+                    font-weight: 700;
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .icons {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 12px;
+            padding-bottom: 3rem;
+            
+            i {
+                padding: 5px;
+            }
+        }
+
+    }
+}
+
+.testimonials {
+    background-color: #F0D082;
+
+    .container {
+        border: 1px solid #FFFFFF;
+        background-color: #FFFFFF;
+        border-radius: 2px;
+
+        .section-title {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .section-reviews {
+
+            .cards {
+                display: flex;
+                justify-content: space-around;
+                gap: 5rem;
+                padding-left: 7rem;
+                padding-right: 7rem;
+
+                .review-card {
+
+                    p {
+                        margin-bottom: 2rem;
+                    }
+
+                    .stars {
+                        color: #F94D1C;
+                        font-size: 16px;
+                        margin-bottom: 1rem;
+                    }
+
+                    .review-bottom {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+
+                        img {
+                            // margin-bottom: 1rem;
+                        }
+
+                        div {
+                           display: flex;
+                           flex-direction: column;
+                           margin-left: 1rem;
+
+                           h3 {
+                            font-size: 22px;
+                            font-weight: 700;
+                           }
+
+                           p {
+                            color: #F94D1C;
+                            margin-bottom: 0;
+                           }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

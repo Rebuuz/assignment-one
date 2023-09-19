@@ -89,6 +89,18 @@ html, body {
   color: #191919;
 }
 
+.section-title p {
+  margin: 1rem 0 1rem 0;
+  color: #F94D1C;
+  font-weight: 400;
+  font-size: 18px;
+}
+.section-title h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+
 header {
   background-color: #F0EFE9;
   padding: 16px;
@@ -734,12 +746,127 @@ header .container .menu .main-menu .btn-login {
 .why-choose-us .container .content-right .bg-box {
   position: absolute;
   background-color: #F0EFE9;
-  width: 980px;
+  width: 1057px;
   height: 425px;
   top: 13rem;
-  right: -13.55rem;
+  right: -18.99rem;
 }
 .why-choose-us .container .content-right img {
   position: absolute;
   margin-top: 1.5rem;
+}
+
+.project-and-case .container .section-title {
+  text-align: center;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+.project-and-case .container .articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.project-and-case .container .articles img {
+  width: 100%;
+}
+.project-and-case .container .articles h3 {
+  font-size: 22px;
+  font-weight: 700;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1.5px solid #E7E7E7;
+}
+.project-and-case .container .articles a {
+  text-decoration: none;
+  color: #191919;
+  display: block;
+  text-align: right;
+  margin-top: 2rem;
+}
+.project-and-case .container .button {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.team-members {
+  background-color: #F0D082;
+  margin-top: 5rem;
+}
+.team-members .container .section-title {
+  padding-top: 4rem;
+}
+.team-members .container .section-title h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-members .container .section-title h2 a {
+  border: 1px solid #191919;
+}
+.team-members .container .section-team {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+.team-members .container .section-team div h3 {
+  padding-top: 2rem;
+  font-weight: 700;
+  font-size: 22px;
+}
+.team-members .container .icons {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 3rem;
+}
+.team-members .container .icons i {
+  padding: 5px;
+}
+
+.testimonials {
+  background-color: #F0D082;
+}
+.testimonials .container {
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+}
+.testimonials .container .section-title {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.testimonials .container .section-reviews .cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 5rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+.testimonials .container .section-reviews .cards .review-card p {
+  margin-bottom: 2rem;
+}
+.testimonials .container .section-reviews .cards .review-card .stars {
+  color: #F94D1C;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+.testimonials .container .section-reviews .cards .review-card .review-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.testimonials .container .section-reviews .cards .review-card .review-bottom div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.testimonials .container .section-reviews .cards .review-card .review-bottom div h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.testimonials .container .section-reviews .cards .review-card .review-bottom div p {
+  color: #F94D1C;
+  margin-bottom: 0;
 }
