@@ -921,6 +921,7 @@ header {
 
 .testimonials {
     background-color: #F0D082;
+    padding-bottom: 5rem;
 
     .container {
         border: 1px solid #FFFFFF;
@@ -938,9 +939,8 @@ header {
             .cards {
                 display: flex;
                 justify-content: space-around;
-                gap: 5rem;
-                padding-left: 7rem;
-                padding-right: 7rem;
+                gap: 4rem;
+                padding: 3rem;
 
                 .review-card {
 
@@ -959,10 +959,6 @@ header {
                         flex-direction: row;
                         align-items: center;
 
-                        img {
-                            // margin-bottom: 1rem;
-                        }
-
                         div {
                            display: flex;
                            flex-direction: column;
@@ -976,6 +972,7 @@ header {
                            p {
                             color: #F94D1C;
                             margin-bottom: 0;
+                            font-size: 16px;
                            }
                         }
                     }
@@ -983,5 +980,60 @@ header {
                 }
             }
         }
+
+        .button {
+            margin-top: 5rem;
+            margin-bottom: 6rem;
+            text-align: center;
+        }
     }
 }
+
+.articles-news {
+    margin-top: 4rem;
+
+    .container {
+
+        .section-title {
+            
+            h2 {
+                display: flex;
+                justify-content: space-between;
+                
+            }
+        }
+
+        .news-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+
+            article {
+
+                p {
+                    margin-top: 1.5rem;
+                }
+                
+                h3 {
+                    margin-top: 1rem;
+                    font-size: 22px;
+                    font-weight: 700;
+                    max-width: 310px;
+                }
+            }
+        }
+
+        .icons {
+                margin-top: 2rem;
+                text-align: center;
+                font-size: 12px;
+                padding-bottom: 3rem;
+                
+                i {
+                    padding: 5px;
+                }
+            }
+    }
+}
+
