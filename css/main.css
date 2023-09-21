@@ -883,6 +883,9 @@ header .container .menu .main-menu .btn-login {
 .articles-news .container .section-title h2 {
   display: flex;
   justify-content: space-between;
+  font-family: "DM Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
 }
 .articles-news .container .news-section {
   display: grid;
@@ -907,4 +910,107 @@ header .container .menu .main-menu .btn-login {
 }
 .articles-news .container .icons i {
   padding: 5px;
+}
+
+.signup {
+  background-color: #F0EFE9;
+  margin-top: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-image: url(/images/lines.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 70%;
+}
+.signup .container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.signup .container h2 {
+  font-size: 45px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  color: #191919;
+}
+.signup .container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signup .container div .email {
+  border: none;
+  border-radius: 25px;
+  padding: 15px 60px;
+  color: #8C8C8C;
+}
+.signup .container div a {
+  margin-left: 1rem;
+}
+
+.footer {
+  background-color: #0E1021;
+  background-image: url(/images/Element.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+.footer .container {
+  padding-top: 5rem;
+  color: #B6B6BC;
+  font-weight: 500;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 4rem;
+  padding-bottom: 3rem;
+  align-items: center;
+}
+.footer .container .footer-logo img {
+  margin-bottom: 2rem;
+}
+.footer .container .footer-logo p {
+  font-weight: 300;
+  margin: 0;
+}
+.footer .container .column h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+}
+.footer .container .column ul {
+  margin: 0;
+  padding: 0;
+}
+.footer .container .column ul li {
+  list-style-type: none;
+}
+.footer .container .column ul li a {
+  text-decoration: none;
+  color: #B6B6BC;
+  font-size: 16px;
+  line-height: 2rem;
+}
+.footer .container .column ul li a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.bottom-footer {
+  background-color: #0E1021;
+  border-top: 1px solid #3E404D;
+}
+.bottom-footer .container {
+  margin-top: 2rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  color: #B6B6BC;
+}
+.bottom-footer .container .contact-media a {
+  margin-left: 1rem;
+  color: #B6B6BC;
+  font-size: 1.2rem;
+}
+.bottom-footer .container .contact-media a:hover {
+  color: #F94D1C;
 }
