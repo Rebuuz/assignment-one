@@ -282,14 +282,23 @@ header .container .menu .main-menu .btn-login {
 }
 
 .companies {
-  display: none;
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+  margin: 3rem;
 }
-@media (min-width: 1400px) {
+@media (max-width: 1200px) {
   .companies {
     display: flex;
-    justify-content: center;
-    gap: 55px;
-    margin: 3rem;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    gap: 0px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .companies img {
+    width: 40%;
   }
 }
 
@@ -307,7 +316,7 @@ header .container .menu .main-menu .btn-login {
 @media (max-width: 576px) {
   .features {
     border: none;
-    padding: 0;
+    padding: 3rem;
     margin: 0;
   }
 }
@@ -350,7 +359,7 @@ header .container .menu .main-menu .btn-login {
 }
 @media (max-width: 576px) {
   .features .content-left h3 {
-    margin: 1.5rem 0;
+    margin: 1rem 0;
   }
 }
 .features .content-left h2 {
@@ -376,7 +385,7 @@ header .container .menu .main-menu .btn-login {
 @media (max-width: 576px) {
   .features .content-left h2 {
     font-size: 1.3em;
-    width: 100% !important;
+    width: 100%;
   }
 }
 .features .content-left .btn-yellow {
