@@ -122,6 +122,32 @@ html, body {
     font-size: 1.3em;
   }
 }
+.section-title h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  color: #191919;
+}
+@media (max-width: 1400px) {
+  .section-title h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .section-title h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .section-title h1 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 576px) {
+  .section-title h1 {
+    font-size: 1em;
+  }
+}
 
 header {
   background-color: #F0EFE9;
@@ -893,6 +919,7 @@ header .container .menu .main-menu .btn-login {
   display: grid;
   grid-template-columns: 1fr 7fr;
   align-items: center;
+  justify-items: center;
 }
 @media (max-width: 576px) {
   .why-choose-us .container .content-left .bottom-box {
@@ -939,7 +966,7 @@ header .container .menu .main-menu .btn-login {
   }
 }
 .why-choose-us .container .content-left .bottom-box .text p {
-  margin-bottom: 3rem;
+  margin: 0 0 3rem 0;
   color: #191919;
 }
 @media (max-width: 576px) {

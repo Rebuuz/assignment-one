@@ -1,0 +1,108 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&family=Inter:wght@300;500&display=swap');
+@import url(/css/main.css);
+
+.showcase {
+    background-position: -0% 120%;
+    .container {
+        justify-content: center;
+        .content {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            .section-title {
+                text-align: center;
+
+                a {
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 16px;
+                    margin: 0;
+                    padding: 1rem;
+                    color: #191919;
+                    font-weight: 300;
+
+                    &.active {
+                        text-decoration: none;
+                        font-weight: 500;
+                        margin: 0;
+                    }
+
+                    &:hover {
+                        font-weight: 500;
+                    }
+                }
+
+                h1 {
+                    margin-top: 1.5rem;
+                    font-size: 56px;
+
+                    @media (max-width: 576px) {
+                        font-size: 2.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    margin-top: 5rem;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        @media (max-width: 1200px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: 992px) {
+            grid-template-columns: 1fr;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border: 1px solid #D1D1D1;
+            padding: 3rem 4rem 3rem;
+
+            .round-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-self: flex-start;
+                background-color: #191919;
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+
+                i {
+                    color: #FFFFFF;
+                    font-size: 24px;
+                }
+            }
+
+            .box-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                margin-left: 1rem;
+
+                h3 {
+                    font-size: 22px;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                }
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

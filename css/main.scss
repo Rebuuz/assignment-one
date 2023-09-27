@@ -129,6 +129,29 @@ html, body {
             font-size: 1.3em;
         }
     }
+
+    h1 {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 45px;
+        font-weight: 700;
+        color: #191919;
+
+        @media (max-width: 1400px) {
+            font-size: 40px;
+        }
+
+        @media (max-width: 992px) {
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 1.5em;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 1em;
+        }
+    }
 }
 
 header {
@@ -925,6 +948,7 @@ header {
                 display: grid;
                 grid-template-columns: 1fr 7fr;
                 align-items: center;
+                justify-items: center;
                 
                 @media (max-width: 576px) {
                     padding-bottom: 2rem;
@@ -974,7 +998,7 @@ header {
                     }
 
                     p {
-                        margin-bottom: 3rem;
+                        margin: 0 0 3rem 0;
                         color: #191919;
 
                         @media (max-width: 576px) {

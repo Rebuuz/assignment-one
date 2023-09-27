@@ -1,0 +1,99 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&family=Inter:wght@300;500&display=swap");
+@import url(/css/main.css);
+.showcase {
+  background-position: 0% 120%;
+}
+.showcase .container {
+  justify-content: center;
+}
+.showcase .container .content {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.showcase .container .content .section-title {
+  text-align: center;
+}
+.showcase .container .content .section-title a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0;
+  padding: 1rem;
+  color: #191919;
+  font-weight: 300;
+}
+.showcase .container .content .section-title a.active {
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0;
+}
+.showcase .container .content .section-title a:hover {
+  font-weight: 500;
+}
+.showcase .container .content .section-title h1 {
+  margin-top: 1.5rem;
+  font-size: 56px;
+}
+@media (max-width: 576px) {
+  .showcase .container .content .section-title h1 {
+    font-size: 2.5em;
+  }
+}
+
+.contact {
+  margin-top: 5rem;
+}
+.contact .container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+@media (max-width: 1200px) {
+  .contact .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 992px) {
+  .contact .container {
+    grid-template-columns: 1fr;
+  }
+}
+.contact .container .box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #D1D1D1;
+  padding: 3rem 4rem 3rem;
+}
+.contact .container .box .round-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  background-color: #191919;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.contact .container .box .round-icon i {
+  color: #FFFFFF;
+  font-size: 24px;
+}
+.contact .container .box .box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 1rem;
+}
+.contact .container .box .box-text h3 {
+  font-size: 22px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}
+.contact .container .box .box-text p {
+  margin: 0;
+  padding: 0;
+}
