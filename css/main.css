@@ -257,7 +257,7 @@ header .container .menu .main-menu .btn-login {
 
 .showcase {
   background-color: #F0EFE9;
-  background-image: url("/images/waves2.svg");
+  background-image: url("../images/waves2.svg");
   background-repeat: no-repeat;
   background-position: -2% 102%;
 }

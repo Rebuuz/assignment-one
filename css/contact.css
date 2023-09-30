@@ -46,9 +46,10 @@
   margin-top: 5rem;
 }
 .contact .container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  padding: 0;
 }
 @media (max-width: 1200px) {
   .contact .container {
@@ -63,10 +64,10 @@
 }
 .contact .container .box {
   display: flex;
+  justify-content: center;
   flex-direction: row;
-  align-items: center;
   border: 1px solid #D1D1D1;
-  padding: 3rem 4rem 3rem;
+  padding: 2rem 2rem 2rem 2rem;
 }
 .contact .container .box .round-icon {
   display: flex;
@@ -116,7 +117,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding-left: 5rem;
   padding-right: 5rem;
   margin-left: 10rem;
