@@ -1551,6 +1551,16 @@ header {
         padding-bottom: 3rem;
         align-items: center;
 
+        @media (max-width: 1200px) { 
+            padding-top: 1rem;
+            gap: 2rem;
+            align-items: baseline;
+        }
+
+        @media (max-width: 768px) {
+            grid-template-columns: 2fr 1fr;
+        }
+
         @media (max-width: 576px) {
             padding-top: 2rem;
             grid-template-columns: 1fr;
@@ -1631,6 +1641,11 @@ header {
         display: flex;
         justify-content: space-between;
         color: #B6B6BC;
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+            align-items: center;
+        }
 
         .copyright {
 
