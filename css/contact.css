@@ -2,9 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&family=Inter:wght@300;500&display=swap");
 @import url(./main.css);
-.showcase {
-  background-position: 0% 120%;
-}
 .showcase .container {
   justify-content: center;
 }
@@ -42,14 +39,11 @@
   }
 }
 
-.contact {
-  margin-top: 5rem;
-}
 .contact .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
-  padding: 0;
+  padding-top: 5rem;
 }
 @media (max-width: 1200px) {
   .contact .container {

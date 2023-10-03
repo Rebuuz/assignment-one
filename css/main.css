@@ -1,6 +1,28 @@
 /*Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&family=Inter:wght@300;500&display=swap");
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pulse-rotate {
+  0% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  50% {
+    transform: scale(1.5) rotate(10deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(5deg);
+  }
+}
 html, body {
   margin: 0;
   color: #191919;
@@ -28,6 +50,8 @@ html, body {
   background-color: #191919;
   border: solid 1px #191919;
   color: #F0EFE9;
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 
 .btn-transparent {
@@ -48,6 +72,8 @@ html, body {
   background-color: #191919;
   border: solid 1px #191919;
   color: #F0EFE9;
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 
 .btn-black {
@@ -68,6 +94,8 @@ html, body {
   background-color: #F9D783;
   border: solid 1px #F9D783;
   color: #191919;
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 
 .btn-round {
@@ -88,6 +116,9 @@ html, body {
   background-color: #F9D783;
   border: solid 1px #F9D783;
   color: #191919;
+  transition: 0.5s;
+  transform: scale(1.1);
+  animation: pulse 1s linear infinite;
 }
 
 .section-title p {
@@ -220,8 +251,10 @@ header .container .menu .top-menu .contact-media a {
   color: #191919;
   font-size: 1.2rem;
 }
-header .container .menu .top-menu .contact-media a:hover {
+header .container .menu .top-menu .contact-media a i:hover {
   color: #F94D1C;
+  animation: pulse-rotate 1s linear infinite;
+  transition: 1s;
 }
 header .container .menu .main-menu {
   display: flex;
@@ -337,6 +370,10 @@ header .container .menu .main-menu .btn-login {
   margin-top: 4rem;
   margin-bottom: 4rem;
   width: 100%;
+}
+.companies img:hover {
+  transform: scale(1.1) rotate(5deg);
+  cursor: pointer;
 }
 @media (max-width: 1200px) {
   .companies {
@@ -544,6 +581,8 @@ header .container .menu .main-menu .btn-login {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 @media (max-width: 576px) {
@@ -564,6 +603,8 @@ header .container .menu .main-menu .btn-login {
   .about-company .container .column-left {
     margin: 0;
     position: relative;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (max-width: 576px) {
@@ -579,8 +620,6 @@ header .container .menu .main-menu .btn-login {
 @media (max-width: 1200px) {
   .about-company .container .column-left img {
     position: relative;
-    width: 100%;
-    height: auto;
   }
 }
 @media (max-width: 576px) {
@@ -600,11 +639,17 @@ header .container .menu .main-menu .btn-login {
   padding: 2rem 1rem 2rem 2rem;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+@media (max-width: 1200px) {
+  .about-company .container .column-left .founder-box {
+    position: absolute;
+    margin: 0;
+  }
+}
 @media (max-width: 576px) {
   .about-company .container .column-left .founder-box {
     margin: 0 auto;
     text-align: left;
-    max-width: 100%;
+    width: 100%;
     padding: 1rem;
   }
 }
@@ -642,6 +687,12 @@ header .container .menu .main-menu .btn-login {
 .about-company .container .column-right {
   padding: 1.5rem;
 }
+@media (max-width: 1200px) {
+  .about-company .container .column-right {
+    padding: 0;
+    width: 100%;
+  }
+}
 @media (max-width: 576px) {
   .about-company .container .column-right {
     padding: 0;
@@ -662,6 +713,7 @@ header .container .menu .main-menu .btn-login {
 @media (max-width: 992px) {
   .about-company .container .column-right h3 {
     margin: 1rem;
+    text-align: center;
   }
 }
 @media (max-width: 576px) {
@@ -754,6 +806,11 @@ header .container .menu .main-menu .btn-login {
   background-position: 100% 102%;
   width: 100%;
 }
+@media (max-width: 1200px) {
+  .services {
+    text-align: center;
+  }
+}
 @media (max-width: 576px) {
   .services {
     margin-top: 1rem;
@@ -820,6 +877,13 @@ header .container .menu .main-menu .btn-login {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+@media (max-width: 1200px) {
+  .services .container .cards {
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
 @media (max-width: 576px) {
   .services .container .cards {
     flex-direction: column;
@@ -832,6 +896,11 @@ header .container .menu .main-menu .btn-login {
 }
 .services .container .cards .box:hover {
   background-color: #F9D783;
+  transform: scale(1.1);
+  transition: all ease-in-out 0.5s;
+}
+.services .container .cards .box:hover a {
+  animation: pulse 1s linear infinite;
 }
 .services .container .cards .box .line {
   border-bottom: 1.5px solid #191919;
@@ -881,6 +950,11 @@ header .container .menu .main-menu .btn-login {
   justify-content: space-between;
   margin-top: 4rem;
 }
+@media (max-width: 1200px) {
+  .why-choose-us .container {
+    width: 100%;
+  }
+}
 @media (max-width: 992px) {
   .why-choose-us .container {
     margin-top: 1rem;
@@ -895,6 +969,12 @@ header .container .menu .main-menu .btn-login {
   .why-choose-us .container {
     width: 100%;
     padding: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .why-choose-us .container .content-left {
+    width: 100%;
+    text-align: center;
   }
 }
 @media (max-width: 576px) {
@@ -959,6 +1039,11 @@ header .container .menu .main-menu .btn-login {
   align-items: center;
   justify-items: center;
 }
+@media (max-width: 1200px) {
+  .why-choose-us .container .content-left .bottom-box {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 576px) {
   .why-choose-us .container .content-left .bottom-box {
     padding-bottom: 2rem;
@@ -1020,6 +1105,11 @@ header .container .menu .main-menu .btn-login {
   padding-top: 3rem;
   position: relative;
 }
+@media (max-width: 1200px) {
+  .why-choose-us .container .content-right {
+    display: none;
+  }
+}
 @media (max-width: 576px) {
   .why-choose-us .container .content-right {
     display: none;
@@ -1065,9 +1155,16 @@ header .container .menu .main-menu .btn-login {
   color: #191919;
   text-decoration: none;
 }
+.project-and-case .container .projects .article:hover img {
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
+}
 .project-and-case .container .projects .article:hover div {
   text-decoration: underline;
   font-weight: bold;
+}
+.project-and-case .container .projects .article:hover div i {
+  animation: pulse-rotate 1s linear infinite;
 }
 .project-and-case .container .projects .article img {
   width: 100%;
@@ -1095,6 +1192,8 @@ header .container .menu .main-menu .btn-login {
 @media (max-width: 576px) {
   .project-and-case .container .projects .article div {
     font-size: 0.9em;
+    text-align: left;
+    margin-top: 1rem;
   }
 }
 .project-and-case .container .button {
@@ -1125,6 +1224,11 @@ header .container .menu .main-menu .btn-login {
     padding-top: 1.5rem;
   }
 }
+@media (max-width: 992px) {
+  .team-members .container .section-title p {
+    text-align: center;
+  }
+}
 @media (max-width: 576px) {
   .team-members .container .section-title p {
     text-align: center;
@@ -1135,6 +1239,12 @@ header .container .menu .main-menu .btn-login {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 992px) {
+  .team-members .container .section-title h2 {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 @media (max-width: 576px) {
   .team-members .container .section-title h2 {
     flex-direction: column;
@@ -1142,6 +1252,11 @@ header .container .menu .main-menu .btn-login {
 }
 .team-members .container .section-title h2 a {
   border: 1px solid #191919;
+}
+@media (max-width: 992px) {
+  .team-members .container .section-title h2 a {
+    margin-top: 1rem;
+  }
 }
 @media (max-width: 576px) {
   .team-members .container .section-title h2 a {
@@ -1153,6 +1268,23 @@ header .container .menu .main-menu .btn-login {
   justify-content: space-around;
   gap: 1rem;
   margin-top: 5rem;
+}
+@media (max-width: 1200px) {
+  .team-members .container .section-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 992px) {
+  .team-members .container .section-team {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .team-members .container .section-team {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 }
 @media (max-width: 576px) {
   .team-members .container .section-team {
@@ -1188,6 +1320,8 @@ header .container .menu .main-menu .btn-login {
 }
 .team-members .container .icons .dot:hover {
   background-color: #191919;
+  transform: scale(1.5);
+  transition: all 0.5s ease-in-out;
 }
 
 .testimonials {
@@ -1220,6 +1354,11 @@ header .container .menu .main-menu .btn-login {
   justify-content: space-around;
   gap: 4rem;
   padding: 3rem;
+}
+@media (max-width: 992px) {
+  .testimonials .container .section-reviews .cards {
+    display: grid;
+  }
 }
 @media (max-width: 576px) {
   .testimonials .container .section-reviews .cards {
@@ -1310,6 +1449,11 @@ header .container .menu .main-menu .btn-login {
     padding: 1rem;
   }
 }
+@media (max-width: 1200px) {
+  .articles-news .container .section-title p {
+    text-align: center;
+  }
+}
 @media (max-width: 576px) {
   .articles-news .container .section-title p {
     text-align: center;
@@ -1318,6 +1462,16 @@ header .container .menu .main-menu .btn-login {
 .articles-news .container .section-title h2 {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .articles-news .container .section-title h2 {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+  }
+  .articles-news .container .section-title h2 .btn-transparent {
+    margin-top: 1rem;
+  }
 }
 @media (max-width: 576px) {
   .articles-news .container .section-title h2 {
@@ -1334,6 +1488,16 @@ header .container .menu .main-menu .btn-login {
   gap: 1rem;
   margin-top: 1.5rem;
 }
+@media (max-width: 1200px) {
+  .articles-news .container .news-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 992px) {
+  .articles-news .container .news-section {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 576px) {
   .articles-news .container .news-section {
     grid-template-columns: 1fr;
@@ -1348,6 +1512,10 @@ header .container .menu .main-menu .btn-login {
   text-decoration: underline;
   font-weight: 700;
   color: #191919;
+}
+.articles-news .container .news-section .article:hover img {
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
 }
 .articles-news .container .news-section .article p {
   margin-top: 1.5rem;
@@ -1374,10 +1542,12 @@ header .container .menu .main-menu .btn-login {
     font-size: 1.1em;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .articles-news .container .news-section .article {
     border-bottom: 1.5px solid #E7E7E7;
   }
+}
+@media (max-width: 576px) {
   .articles-news .container .news-section .article img {
     width: 100%;
     margin-top: 1rem;
@@ -1401,6 +1571,8 @@ header .container .menu .main-menu .btn-login {
 }
 .articles-news .container .icons .dot:hover {
   background-color: #191919;
+  transform: scale(1.5);
+  transition: all 0.5s ease-in-out;
 }
 
 .signup {
@@ -1422,6 +1594,11 @@ header .container .menu .main-menu .btn-login {
 .signup .container {
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 1200px) {
+  .signup .container {
+    display: grid;
+  }
 }
 @media (max-width: 576px) {
   .signup .container {
@@ -1446,7 +1623,7 @@ header .container .menu .main-menu .btn-login {
 }
 @media (max-width: 768px) {
   .signup .container h2 {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 }
 .signup .container div {
@@ -1454,10 +1631,18 @@ header .container .menu .main-menu .btn-login {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .signup .container div {
+    display: grid;
+    text-align: center;
+    gap: 1rem;
+  }
+}
 @media (max-width: 576px) {
   .signup .container div {
     display: grid;
     text-align: center;
+    width: 100%;
   }
 }
 .signup .container div .email {
@@ -1474,6 +1659,11 @@ header .container .menu .main-menu .btn-login {
 }
 .signup .container div a {
   margin-left: 1rem;
+}
+@media (max-width: 768px) {
+  .signup .container div a {
+    margin: 0;
+  }
 }
 @media (max-width: 576px) {
   .signup .container div a {
@@ -1596,4 +1786,8 @@ header .container .menu .main-menu .btn-login {
 }
 .bottom-footer .container .contact-media a:hover {
   color: #F94D1C;
+}
+.bottom-footer .container .contact-media a:hover i {
+  animation: pulse-rotate 1s linear infinite;
+  transition: 1s;
 }
