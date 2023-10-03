@@ -186,6 +186,33 @@ html, body {
     }
 }
 
+main {
+    position: relative;
+
+    .hamburger-items {
+        position: absolute;
+        width: 50vw;
+        height: 100vh;
+        background-color: pink;
+        transform: translateX(50vw);
+        transition: 1s ease-in-out;
+
+        .main-menu {
+            display: flex;
+            flex-direction: column;
+            
+            nav {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        &.open {
+            transform: translateX(100vw);
+        }
+    }
+}
+
 header {
     background-color: #F0EFE9;
     padding: 16px;
@@ -196,10 +223,21 @@ header {
         align-items: center;
         justify-content: space-between;
 
-        .menu-bars {
-            border: none;
-            background-color: transparent;
-            font-size: 25px;
+        .hamburger {
+            height: 20px;
+            width: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            z-index: 2;
+
+            &__line {
+                height: 2px;
+                width: 100%;
+                background-color: #191919;
+                border-radius: 4px;
+            }
 
             @media (min-width: 992px) {
                 display: none;
