@@ -26,15 +26,6 @@
     }
 }
 
-@keyframes hamburger {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translate(50%);
-    }
-}
-
 html, body {
     margin: 0;
     color: #191919;
@@ -195,61 +186,6 @@ html, body {
     }
 }
 
-main {
-    position: relative;
-
-        .hamburger-items {
-                display: none;
-
-                @media (max-width: 992px) {
-                   display: block; 
-                }
-
-                position: absolute;
-                width: 30vw;
-                height: 50vh;
-                background-color: white;
-                transform: translateX(30vw);
-                transition: 1s ease-out;
-                right: 0;
-    
-                .main-menu {
-                    display: flex;
-                    flex-direction: column;
-                
-                    nav {
-                        display: flex;
-                        flex-direction: column;
-                        margin-top: 6rem;
-                        align-items: flex-end;
-                        gap: 1rem;
-                        margin-right: 2rem;
-
-                        a {
-                            gap: 2rem;
-                            font-size: 16px;
-                            font-weight: 400;
-                            text-decoration: none;
-                            color: #191919;
-
-                            &:hover {
-                                text-decoration: underline;
-                                font-weight: 700;
-                            }
-                        }
-                    }
-                    .btn-yellow {
-                        margin-top: 2rem;
-                        width: 50%;
-                    }
-            }
-    
-            &.open {
-                transform: translateX(0);
-            }
-        }
-} 
-
 header {
     background-color: #F0EFE9;
     padding: 16px;
@@ -260,105 +196,10 @@ header {
         align-items: center;
         justify-content: space-between;
 
-        
-        .hamburger {
-            height: 20px;
-            width: 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            cursor: pointer;
-            z-index: 2;
-
-            // &__line {
-            //     height: 2px;
-            //     width: 100%;
-            //     background-color: #191919;
-            //     border-radius: 4px;
-            // }
-
-            &__line:nth-child(1) {
-                transform: translateY(0) rotate(0);
-                height: 2px;
-                width: 100%;
-                background-color: #191919;
-                border-radius: 4px;
-            }
-        
-            &__line:nth-child(2) {
-                // opacity: 1;
-                height: 2px;
-                width: 100%;
-                background-color: #191919;
-                border-radius: 4px;
-
-            }
-        
-            &__line:nth-child(3) {
-                transform: translateY(0) rotate(0);
-                height: 2px;
-                width: 100%;
-                background-color: #191919;
-                border-radius: 4px;
-            }
-        
-            // Hamburgeren när menyn är öppen (kryssform)
-            &.open {
-                &__line:nth-child(1) {
-                    transform: translateY(11px) rotate(45deg);
-                }
-        
-                &__line:nth-child(2) {
-                    opacity: 0;
-                }
-        
-                &__line:nth-child(3) {
-                    transform: translateY(-11px) rotate(-45deg);
-                }
-            }
-        }
-
-        // .hamburger {
-        //     height: 20px;
-        //     width: 40px;
-        //     display: flex;
-        //     flex-direction: column;
-        //     justify-content: space-between;
-        //     cursor: pointer;
-        //     z-index: 2;
-
-        //     &__line {
-        //         height: 2px;
-        //         width: 100%;
-        //         background-color: #191919;
-        //         border-radius: 4px;
-
-        //         &__line:nth-child(1) {
-        //             transform: translateY(0) rotate(0);
-        //         }
-                
-        //         &__line:nth-child(2) {
-        //             transform: translateY(0) rotate(0);
-        //         }
-                
-        //         &__line:nth-child(3) {
-        //             transform: translateY(0) rotate(0);
-        //         }
-
-        //         &.open {
-        //             &__line:nth-child(1) {
-        //                 transform: translateY(11px) rotate(45deg);
-        //             }
-                    
-        //             &__line:nth-child(2) {
-        //                 opacity: 0;
-        //             }
-                    
-        //             &__line:nth-child(3) {
-        //                 transform: translateY(-11px) rotate(-45deg);
-        //             }
-        //         }
-        //     }
+        .menu-bars {
+            border: none;
+            background-color: transparent;
+            font-size: 25px;
 
             @media (min-width: 992px) {
                 display: none;
@@ -475,6 +316,7 @@ header {
         }
     }
 
+}
 
 .showcase {
     background-color: #F0EFE9;
