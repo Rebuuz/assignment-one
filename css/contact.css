@@ -2,6 +2,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&family=Inter:wght@300;500&display=swap");
 @import url(./main.css);
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .showcase .container {
   justify-content: center;
 }
@@ -28,6 +50,11 @@
 }
 .showcase .container .content .section-title a:hover {
   font-weight: 500;
+  color: #F94D1C;
+  text-decoration: underline;
+  transform: scale(1.1);
+  transition: 0.5s;
+  animation: rotate 1s linear infinite;
 }
 .showcase .container .content .section-title h1 {
   margin-top: 1.5rem;
@@ -71,6 +98,13 @@
   height: 60px;
   width: 60px;
   border-radius: 50%;
+}
+.contact .container .box .round-icon:hover {
+  background-color: #F94D1C;
+  transform: scale(1.1);
+  transition: 0.5s;
+  animation: pulse 1s infinite linear;
+  cursor: pointer;
 }
 .contact .container .box .round-icon i {
   color: #FFFFFF;

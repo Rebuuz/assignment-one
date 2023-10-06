@@ -288,6 +288,12 @@ header {
                     margin-right: 35px;
                     position: relative;
 
+                    &:hover {
+                        color: #F94D1C;
+                        transition: .5s;
+                        transform: scale(1.1);
+                    }
+
                     &.active {
                         font-weight: 500;
                     }
@@ -665,7 +671,6 @@ header {
                 box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
                 @media (max-width: 1200px) {
-                    
                     position: absolute;
                     margin: 0;
                 }
@@ -1335,11 +1340,17 @@ header {
 
 
             @media (max-width: 576px) {
-                display: grid;
                 margin-top: 2rem;
             }
 
             div {
+
+                img {
+                    @media (max-width: 576px) {
+                        width: 70%;
+                        height: auto;
+                    }
+                }
                 
                 h3 {
                     padding-top: 2rem;
@@ -1348,6 +1359,13 @@ header {
                 
                     @media (max-width: 576px) {
                         padding-top: 1rem;
+                        font-size: 1.2em;
+                    }
+                }
+
+                p {
+                    @media (max-width: 576px) {
+                        font-size: .9em;
                     }
                 }
             }
@@ -1754,7 +1772,7 @@ header {
     
     
     .container {
-        padding-top: 5rem;
+        padding-top: 2rem;
         color: #B6B6BC;
         font-weight: 500;
         font-size: 16px;
@@ -1763,6 +1781,11 @@ header {
         gap: 4rem;
         padding-bottom: 3rem;
         align-items: center;
+
+        @media (max-width: 1400px) {
+            align-items: baseline;
+            padding-top: 1rem;
+        }
 
         @media (max-width: 1200px) { 
             padding-top: 1rem;
